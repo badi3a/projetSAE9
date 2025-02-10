@@ -1,8 +1,10 @@
-package esprit.candidat;
+package esprit.candidat.Entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+
+import java.util.List;
 
 @Entity
 public class Candidat {
@@ -13,15 +15,12 @@ public class Candidat {
     private String lastName;
     private String email;
 
-    public Candidat() {
-
-    }
+    public Candidat() {}
 
     public Candidat(String lastName, String firstName, String email) {
         this.lastName = lastName;
         this.firstName = firstName;
-        this.email = email;
-    }
+        this.email = email;}
 
     public String getLastName() {
         return lastName;
@@ -42,7 +41,6 @@ public class Candidat {
     public int getId() {
         return id;
     }
-
 
     public String getEmail() {
         return email;

@@ -1,5 +1,6 @@
 package esprit.candidat;
-
+import esprit.candidat.Entities.Candidat;
+import esprit.candidat.Repositories.CandidatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
