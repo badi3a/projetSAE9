@@ -18,6 +18,6 @@ public class Category {
     private Integer id;
     private String name;
     private String description;
-   @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "category")
     private List<Job> jobs;
 }
