@@ -1,5 +1,7 @@
 package esprit.candidat;
 
+import esprit.candidat.DAO.CandidatRepository;
+import esprit.candidat.models.Candidat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;

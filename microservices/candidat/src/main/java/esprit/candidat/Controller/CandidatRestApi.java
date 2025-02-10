@@ -1,5 +1,7 @@
-package esprit.candidat;
+package esprit.candidat.Controller;
 
+import esprit.candidat.models.Candidat;
+import esprit.candidat.services.CandidatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
