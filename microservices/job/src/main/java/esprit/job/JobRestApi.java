@@ -1,6 +1,4 @@
-package esprit.candidat.Controllers;
-import esprit.candidat.Entities.Job;
-import esprit.candidat.Services.JobService;
+package esprit.job;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,13 +10,13 @@ import java.util.List;
 @RequestMapping("/Job")
 public class JobRestApi {
 
-@Autowired
+    @Autowired
     private JobService jobService;
 
 
     @GetMapping
     public ResponseEntity<Iterable<Job>> findAll() {
-         return new ResponseEntity<>(jobService.findAll(),
+        return new ResponseEntity<>(jobService.findAll(),
                 HttpStatus.OK);}
 
     @GetMapping("/find by id/{id}")
@@ -32,9 +30,9 @@ public class JobRestApi {
     }
 
     @PutMapping("/{id}/etat")
-    public ResponseEntity<Job> updateJob(@PathVariable Integer id,
+    public ResponseEntity<Job> updateJob(@PathVariable Integer idJob,
                                          @RequestParam Boolean etat) {
-        return ResponseEntity.ok(jobService.updateJob(id, etat));
+        return ResponseEntity.ok(jobService.updateJob(idJob, etat));
     }
 
 }

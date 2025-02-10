@@ -17,10 +17,11 @@ public class CandidatApplication {
 	}
     @Autowired
 	private CandidatRepository candidatRepository;
+
 	@Bean
 	public ApplicationRunner init() {
 		return (args) -> {
-			candidatRepository.save(new Candidat("Badia","Bouhdid","badia@gmail.com"));
+			candidatRepository.save(new Candidat("Jamila","BenAbdelkader","Jamila@gmail.com"));
 		};
 }
 }
