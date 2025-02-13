@@ -19,7 +19,7 @@ public class CandidatApplication {
 	@Bean
 	public ApplicationRunner init() {
 		return (args) -> {
-			candidatRepository.save(new Candidat("Badia","Bouhdid","badia@gmail.com"));
+			candidatRepository.save(new Candidat("Amine","Abidi","abidi3335@gmail.com"));
 		};
 }
 }
