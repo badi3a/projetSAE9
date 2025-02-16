@@ -1,7 +1,8 @@
-package esprit.job;
+package esprit.job.entities;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Job {
@@ -10,6 +11,16 @@ public class Job {
     private int idJob;
     private String Service;
     private Boolean Etat;
+    @ManyToOne
+    private Categorie categorie;
+
+    public Categorie getCategorie() {
+        return categorie;
+    }
+
+    public void setCategorie(Categorie categorie) {
+        this.categorie = categorie;
+    }
 
     public int getIdJob() {return idJob;}
 

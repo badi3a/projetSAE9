@@ -1,10 +1,10 @@
-package esprit.job;
+package esprit.job.controllers;
+import esprit.job.entities.Job;
+import esprit.job.services.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/Job")

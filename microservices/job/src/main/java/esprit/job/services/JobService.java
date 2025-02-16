@@ -1,4 +1,6 @@
-package esprit.job;
+package esprit.job.services;
+import esprit.job.entities.Job;
+import esprit.job.repositorys.JobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
